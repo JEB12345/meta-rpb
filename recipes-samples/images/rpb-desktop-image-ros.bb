@@ -11,7 +11,7 @@ REQUIRED_DISTRO_FEATURES = "x11 pam systemd"
 
 # make sure we boot to desktop
 # by default and without x11-base in IMAGE_FEATURES we default to multi-user.target
-SYSTEMD_DEFAULT_TARGET = "graphical.target"
+# SYSTEMD_DEFAULT_TARGET = "graphical.target"
 
 # FIXME Mali is currently added as a machine feature
 # meta-qcom is using a different approach with
@@ -42,6 +42,15 @@ CORE_IMAGE_BASE_INSTALL += " \
     xterm \
     sudo \
     vim \
+    bind \
+    nmap \
+    dhcp \
+    i2c-tools \
+    git \ 
+    screen \ 
+    rsync \ 
+    openssh \ 
+    wget \ 
     packagegroup-ros-almost-world \
     ${@bb.utils.contains("MACHINE_FEATURES", "optee", "optee-test optee-client", "", d)} \
     ${@bb.utils.contains("MACHINE_FEATURES", "mali450", "mali450-userland", "", d)} \
