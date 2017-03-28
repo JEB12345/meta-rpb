@@ -44,7 +44,6 @@ CORE_IMAGE_BASE_INSTALL += " \
     vim \
     bind \
     nmap \
-    dhcp \
     i2c-tools \
     git \ 
     screen \ 
