@@ -20,7 +20,6 @@ REQUIRED_DISTRO_FEATURES = "x11 pam systemd"
 # http://git.yoctoproject.org/cgit/cgit.cgi/meta-qcom/tree/conf/machine/dragonboard-410c.conf#n37
 CORE_IMAGE_BASE_INSTALL += " \
     96boards-tools \
-#    alsa-utils-aplay \
     clutter-1.0-examples \
     networkmanager \
     networkmanager-nmtui \
